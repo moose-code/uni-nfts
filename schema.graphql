@@ -1,0 +1,45 @@
+type NonfungiblePositionManager_Approval {
+  id: ID!
+  owner: String!
+  approved: String!
+  tokenId: BigInt!
+}
+
+type NonfungiblePositionManager_ApprovalForAll {
+  id: ID!
+  owner: String!
+  operator: String!
+  approved: Boolean!
+}
+
+type NonfungiblePositionManager_Collect {
+  id: ID!
+  tokenId: BigInt!
+  recipient: String!
+  amount0: BigInt!
+  amount1: BigInt!
+}
+
+type NonfungiblePositionManager_DecreaseLiquidity {
+  id: ID!
+  tokenId: BigInt!
+  liquidity: BigInt!
+  amount0: BigInt!
+  amount1: BigInt!
+}
+
+type NonfungiblePositionManager_IncreaseLiquidity {
+  id: ID!
+  tokenId: BigInt!
+  liquidity: BigInt!
+  amount0: BigInt!
+  amount1: BigInt!
+}
+
+type NonfungiblePositionManager_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  tokenId: BigInt!
+}
+
